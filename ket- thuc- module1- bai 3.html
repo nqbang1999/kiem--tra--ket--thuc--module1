@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function printFibonacci(n) {
+        let firstNum= 1;
+        let secondNum= 1;
+        document.write(firstNum+ '<br/>');
+        document.write(secondNum+ '<br/>');
+        let thirdNum;
+        while (firstNum+ secondNum< n){
+            thirdNum= firstNum+ secondNum;
+            firstNum= secondNum;
+            secondNum= thirdNum;
+            document.write( thirdNum+'<br/>');
+        }
+    }
+    printFibonacci(12);
+</script>
+
+</body>
+</html>
